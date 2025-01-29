@@ -1,14 +1,14 @@
-Flight Delay Prediction using LSTM & XGBoost
+**Flight Delay Prediction using LSTM & XGBoost**
 
-Overview
+**Overview**
 
 This project implements a flight delay prediction system using a hybrid approach combining Long Short-Term Memory (LSTM) networks and XGBoost. The model leverages sequential data processing with LSTM and robust feature selection with XGBoost to achieve an accuracy of 98.40%. The dataset includes various flight parameters such as weather conditions, airline company, and aircraft manufacture year, significantly enhancing prediction performance.
 
-Features
+**Features**
 
 Hybrid Model: LSTM for time-series dependencies & XGBoost for feature selection.
 
-High Accuracy: 98.40% accuracy with Sigmoid activation.
+**High Accuracy: 98.40% accuracy with Sigmoid activation.**
 
 Feature Engineering: Incorporates features like Airline Company and Aircraft Manufacture Year.
 
@@ -16,7 +16,7 @@ Data-Driven Approach: Uses real-world flight delay datasets from US Bureau of Tr
 
 Scalability: Can be applied across different routes and airlines.
 
-Dataset
+**Dataset**
 
 The dataset is sourced from the US Department of Transport and includes:
 
@@ -32,7 +32,7 @@ Historical Delays
 
 Dataset Link: Flight Delay & Cancellation Dataset (2019-2023)
 
-Methodology
+**Methodology**
 
 Data Collection & Preprocessing:
 
@@ -42,7 +42,7 @@ Feature engineering (Weather, Airline, Distance, etc.).
 
 Normalization (Min-Max scaling/Z-score normalization).
 
-Model Development:
+**Model Development:**
 
 LSTM Model: Captures sequential patterns.
 
@@ -50,19 +50,19 @@ XGBoost Model: Enhances feature selection and predictive accuracy.
 
 Ensemble Learning: Combining predictions from both models.
 
-Model Evaluation:
+**Model Evaluation:**
 
 Metrics: Accuracy, Precision, Recall, F1 Score.
 
 Cross-validation techniques: 5-fold to 20-fold validation.
 
-Deployment:
+**Deployment:**
 
-Model deployed using Flask/FastAPI for real-time predictions.
+Model deployed using StreamLit for real-time predictions.
 
 User Interface: Allows users to input flight details and receive delay predictions.
 
-Results
+**Results**
 
 Highest Accuracy: 98.40% (Sigmoid Activation)
 
@@ -70,28 +70,24 @@ Best Feature Combination: Airline Company + Aircraft Manufacture Year (98.75% ac
 
 Best Cross-Validation Setting: 20-Fold (98.39% accuracy)
 
-Installation
+**Installation**
 
-Clone the repository:
+**Clone the repository:**
 
 git clone https://github.com/your-repo/Flight-Delay-Prediction.git
 cd Flight-Delay-Prediction
 
-Install dependencies:
+**Install dependencies:**
 
 pip install -r requirements.txt
 
-Run the model training script:
+**Run the model training script:**
 
 python train.py
 
-Start the Flask API for predictions:
-
-python app.py
-
 Access the web interface at http://localhost:5000.
 
-Technologies Used
+**Technologies Used**
 
 Python (Pandas, NumPy, Scikit-learn, TensorFlow, XGBoost)
 
@@ -103,23 +99,23 @@ API Deployment (Flask/FastAPI)
 
 Data Visualization (Matplotlib, Seaborn)
 
-Contributors
+**Contributors**
+
+Yashraj Panhalkar
 
 Palnika Chavan
 
 Harsha Peshave
 
-Yashraj Panhalkar
-
 Priyanka Shahane (Advisor)
 
-License
+**License**
 
 This project is licensed under the MIT License.
 
-References
+**References**
 
-Refer to the research paper for detailed methodology and literature review.
+Refer to the research paper for detailed methodology and literature review at https://journalcrd.org/wp-content/uploads/17-CRD2418.pdf.
 
 For any inquiries, please contact yashrajpanhalkar146@gmail.com.
 
